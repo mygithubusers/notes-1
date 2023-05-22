@@ -33,7 +33,7 @@ import EasyMDE from 'easymde'
 import axios from '@nextcloud/axios'
 import { generateUrl } from '@nextcloud/router'
 import { showError } from '@nextcloud/dialogs'
-import '@nextcloud/dialogs/styles/toast.scss'
+import '@nextcloud/dialogs/dist/index.css'
 import {
 	NcActions,
 	NcActionButton,
@@ -269,7 +269,7 @@ export default {
 /* text selection */
 .CodeMirror .CodeMirror-selectedtext {
 	background-color: var(--color-primary-element) !important;
-	color: var(--color-primary-text) !important;
+	color: var(--color-primary-element-text) !important;
 	opacity: 1 !important;
 }
 
@@ -374,5 +374,6 @@ export default {
 	z-index: 10;
 	height: 40px;
 	margin-right: 5px;
+	top: 65px;
 }
 </style>
